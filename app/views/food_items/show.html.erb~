@@ -1,0 +1,8 @@
+<p>
+  <strong>Title:</strong>
+  <%= @food_item.title %>
+</p>
+<p>
+  <strong>Expiry date:</strong>
+  <%= @food_item.expiry_date %>
+</p>

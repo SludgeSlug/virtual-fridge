@@ -1,0 +1,18 @@
+<h1>Edit food item</h1>
+<%= form_for :food_item, url: food_items_path(@food_item.id) }, method: :patch do |f| %>
+  <p>
+    <%= f.label :title %> <br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :expiry_date %><br>
+    <%= f.text_field :expiry_date %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', food_items_path %>

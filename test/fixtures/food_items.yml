@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  expiry_date: MyString
+
+two:
+  title: MyString
+  expiry_date: MyString
