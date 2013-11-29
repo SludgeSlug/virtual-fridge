@@ -14,8 +14,13 @@ class Recipe
 
   private
 
-  def self.fetch_data(food_items)
-    Yajl::Parser.parse(Faraday.get(url(food_items)).env[:body])['results'].flatten
+  def self.fetch_data(food_items)  
+    data = []   
+    1.step(5, 1) do |i|
+      url = url(food_items) << "&p=" << i.to_s
+      data << Yajl::Parser.parse(Faraday.get(url).env[:body])['results'].flatten
+    end
+    data.flatten
   end
 
   def self.url(food_items)
