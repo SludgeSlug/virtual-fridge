@@ -33,7 +33,7 @@
     <tr>
       <td><%= recipe.title %></td>
       <td><%= recipe.ingredients %></td>
-      <td><%= recipe.link %></td>
+      <td><%= recipe.href %></td>
     </tr>
   <% end %>
 </table>
